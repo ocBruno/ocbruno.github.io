@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.33204b11.css",
-    "main.js": "/static/js/main.3a4b1c2b.js",
-    "static/js/787.595c645d.chunk.js": "/static/js/787.595c645d.chunk.js",
-    "static/media/recruiteeAvatar.jpg": "/static/media/recruiteeAvatar.5a6106c60c1ab45fa023.jpg",
-    "index.html": "/index.html",
-    "main.33204b11.css.map": "/static/css/main.33204b11.css.map",
-    "main.3a4b1c2b.js.map": "/static/js/main.3a4b1c2b.js.map",
-    "787.595c645d.chunk.js.map": "/static/js/787.595c645d.chunk.js.map"
+    "main.css": "/ocBruno.github.io/static/css/main.33204b11.css",
+    "main.js": "/ocBruno.github.io/static/js/main.24a2f48a.js",
+    "static/js/787.595c645d.chunk.js": "/ocBruno.github.io/static/js/787.595c645d.chunk.js",
+    "static/media/recruiteeAvatar.jpg": "/ocBruno.github.io/static/media/recruiteeAvatar.5a6106c60c1ab45fa023.jpg",
+    "index.html": "/ocBruno.github.io/index.html",
+    "main.33204b11.css.map": "/ocBruno.github.io/static/css/main.33204b11.css.map",
+    "main.24a2f48a.js.map": "/ocBruno.github.io/static/js/main.24a2f48a.js.map",
+    "787.595c645d.chunk.js.map": "/ocBruno.github.io/static/js/787.595c645d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33204b11.css",
-    "static/js/main.3a4b1c2b.js"
+    "static/js/main.24a2f48a.js"
   ]
 }
