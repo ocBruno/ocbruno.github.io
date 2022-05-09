@@ -1,0 +1,20 @@
+.NavbarContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+.NavbarLinks {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.NavbarLinks a {
+  margin: 0 6px;
+  color: var(--text-color);
+  text-decoration: none;
+}

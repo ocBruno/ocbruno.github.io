@@ -1,0 +1,10 @@
+.SummarySection {
+  display: flex;
+  margin-bottom: 2vmax;
+  padding-left: 1vmin;
+}
+.SummarySection ul {
+  padding: 0;
+  font-size: 13px;
+  margin-top: 6px;
+}

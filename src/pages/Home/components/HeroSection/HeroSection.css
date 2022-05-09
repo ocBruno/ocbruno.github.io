@@ -1,0 +1,60 @@
+.HeroSection {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+/* Header */
+.RecruiteeHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100%;
+}
+.RecruiteeHeader > h2 {
+  text-align: left;
+  width: 100vw;
+}
+.RecruiteeName {
+  display: flex;
+  align-items: center;
+  font-size: 13vmin;
+  margin-bottom: 3px;
+  border-radius: 0 0 12px 0;
+  padding-right: 21px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.Recruitee-location {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: calc(12pt + 1vmin);
+}
+.Recruitee-avatar {
+  height: 12vmin;
+  margin-right: 21px;
+  border-right: 1px solid;
+  padding-right: 21px;
+}
+
+.RecruiteeBackground {
+  height: 100vh;
+}
+.BackgroundContainer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+}
+
+.NextSectionArrow:hover {
+  background: rgb(30, 30, 35);
+}
+.NextSectionArrowButton {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+}
