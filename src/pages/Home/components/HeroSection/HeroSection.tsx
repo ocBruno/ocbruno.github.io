@@ -14,14 +14,14 @@ function HeroSection() {
       },
       boxShadow: "20px -10px 10px rgba(0, 0, 0, 0.1)",
     });
-    gsap.to(".RecruiteeName", {
+    gsap.to("circle", {
       scrollTrigger: {
-        start: "300px 300px",
-        end: "300px 0",
+        trigger: "svg",
         scrub: true,
         markers: false,
       },
-      boxShadow: "20px -10px 10px rgba(0, 0, 0, 0.1)",
+      filter: "drop-shadow( 4px -6px 2px rgba(0, 0, 0, 0.1))",
+      transform: "rotateZ(20deg)",
     });
   }, []);
 
@@ -65,6 +65,7 @@ function HeroSection() {
             <rect width="1440" height="560" x="0" y="0" fill="#32325d"></rect>
             <g>
               <circle
+                className="circle"
                 r="24.18"
                 cx="381"
                 cy="116.08"

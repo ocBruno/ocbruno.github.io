@@ -27,6 +27,10 @@
   padding-right: 21px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
+circle {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(3px 6px 2px rgba(0, 0, 0, 0.1));
+}
 .Recruitee-location {
   color: rgba(255, 255, 255, 0.9);
   font-size: calc(12pt + 1vmin);

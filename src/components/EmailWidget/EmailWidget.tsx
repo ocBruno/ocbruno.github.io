@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import "./EmailWidget.css";
 import emailLogo from "./email-logo.png";
 
-const recruitee = {
-  name: "Bruno Costa",
-};
-
 const getEmailWidgetClassName = (isOpen: boolean) => {
   return isOpen
     ? "EmailWidget-container EmailWidget-open-style"
