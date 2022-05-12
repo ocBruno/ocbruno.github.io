@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <PageLayout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/curriculum" element={<Home />} />
           {/* <Route path="/products/:id" component={Product} /> */}
         </Routes>
       </PageLayout>

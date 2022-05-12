@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ocBruno.github.io/static/css/main.33204b11.css",
-    "main.js": "/ocBruno.github.io/static/js/main.24a2f48a.js",
-    "static/js/787.595c645d.chunk.js": "/ocBruno.github.io/static/js/787.595c645d.chunk.js",
-    "static/media/recruiteeAvatar.jpg": "/ocBruno.github.io/static/media/recruiteeAvatar.5a6106c60c1ab45fa023.jpg",
-    "index.html": "/ocBruno.github.io/index.html",
-    "main.33204b11.css.map": "/ocBruno.github.io/static/css/main.33204b11.css.map",
-    "main.24a2f48a.js.map": "/ocBruno.github.io/static/js/main.24a2f48a.js.map",
-    "787.595c645d.chunk.js.map": "/ocBruno.github.io/static/js/787.595c645d.chunk.js.map"
+    "main.css": "/curriculum/static/css/main.33204b11.css",
+    "main.js": "/curriculum/static/js/main.b3859b14.js",
+    "static/js/787.595c645d.chunk.js": "/curriculum/static/js/787.595c645d.chunk.js",
+    "static/media/recruiteeAvatar.jpg": "/curriculum/static/media/recruiteeAvatar.5a6106c60c1ab45fa023.jpg",
+    "index.html": "/curriculum/index.html",
+    "main.33204b11.css.map": "/curriculum/static/css/main.33204b11.css.map",
+    "main.b3859b14.js.map": "/curriculum/static/js/main.b3859b14.js.map",
+    "787.595c645d.chunk.js.map": "/curriculum/static/js/787.595c645d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33204b11.css",
-    "static/js/main.24a2f48a.js"
+    "static/js/main.b3859b14.js"
   ]
 }

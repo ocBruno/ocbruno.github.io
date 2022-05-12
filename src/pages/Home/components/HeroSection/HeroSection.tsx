@@ -19,7 +19,7 @@ function HeroSection() {
         start: "300px 300px",
         end: "300px 0",
         scrub: true,
-        markers: true,
+        markers: false,
       },
       boxShadow: "20px -10px 10px rgba(0, 0, 0, 0.1)",
     });
