@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./SummarySection.css";
 import recruiteeAvatar from "./recruiteeAvatar.jpg";
 
 function SummarySection() {
+  useEffect(() => {
+    //  tween header box shadow style 3d
+  }, []);
   return (
-    <section id="Summary_Section" className="OuterContent SummarySection">
+    <section id="Summary_Section" className="SummarySection">
       <img
         src={recruiteeAvatar}
         alt="Bruno's Portrait"
