@@ -7,8 +7,8 @@ function HeroSection() {
     //  tween header box shadow style 3d
     gsap.to(".RecruiteeName", {
       scrollTrigger: {
-        start: "300px 300px",
-        end: "300px 0",
+        trigger: "svg",
+        end: "bottom",
         scrub: true,
         markers: false,
       },
@@ -17,6 +17,7 @@ function HeroSection() {
     gsap.to("circle", {
       scrollTrigger: {
         trigger: "svg",
+        end: "bottom",
         scrub: true,
         markers: false,
       },
@@ -25,17 +26,17 @@ function HeroSection() {
     });
   }, []);
 
-  const goToNextSection = () => {
+  const goToSummarySection = () => {
     // make reusable smoothScrollTo
-    gsap.to(window, { duration: 1, scrollTo: 560 });
+    gsap.to(window, { duration: 1, scrollTo: ".SummarySection" });
   };
   return (
     <div className="OuterContent HeroSection">
       {/* box shadow animate on scroll trigger */}
       <header className="RecruiteeHeader">
         <h1 className="RecruiteeName">Bruno Costa</h1>
-        <h2>Frontend Web Developer</h2>
-        <button onClick={goToNextSection} className="NextSectionArrowButton">
+        <h2 className="RecruiteeHeadline">Frontend Web Developer</h2>
+        <button onClick={goToSummarySection} className="NextSectionArrowButton">
           <svg
             width="20px"
             height="20px"
@@ -52,13 +53,9 @@ function HeroSection() {
 
       <div className="BackgroundContainer">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
           width="1440"
           height="560"
           className="RecruiteeBackground"
-          preserveAspectRatio="none"
           viewBox="0 0 1440 560"
         >
           <g clipPath='url("#SvgjsClipPath1175")' fill="none">

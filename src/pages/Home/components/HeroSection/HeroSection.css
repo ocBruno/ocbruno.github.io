@@ -14,18 +14,29 @@
   color: white;
   height: 100%;
 }
-.RecruiteeHeader > h2 {
-  text-align: left;
-  width: 100vw;
-}
+
 .RecruiteeName {
   display: flex;
   align-items: center;
   font-size: 13vmin;
   margin-bottom: 3px;
-  border-radius: 0 0 12px 0;
+  border-bottom: 1px solid #3a3b73;
+  border-top: 1px solid #6d8dc1;
   padding-right: 21px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transform: skewX(-12deg);
+  user-select: none;
+}
+.RecruiteeHeadline {
+  transform: skewX(12deg);
+  border-bottom: 1px solid #3a3b73;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #6d8dc1;
+  border-right: 1px solid #6d8dc1;
+  margin-left: -3px;
+  margin-top: -2px;
+  user-select: none;
+  padding: 0 9px;
 }
 circle {
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.1));
@@ -35,7 +46,7 @@ circle {
   color: rgba(255, 255, 255, 0.9);
   font-size: calc(12pt + 1vmin);
 }
-.Recruitee-avatar {
+.RecruiteeAvatar {
   height: 12vmin;
   margin-right: 21px;
   border-right: 1px solid;
@@ -44,11 +55,22 @@ circle {
 
 .RecruiteeBackground {
   height: 100vh;
+  width: auto;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.RecruiteeBackground > g > g {
+  transform: translate(-24%, 5%);
 }
 .BackgroundContainer {
   display: flex;
   flex-direction: row;
   position: absolute;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
   top: 0;
   z-index: -1;
   left: 0;
@@ -59,6 +81,7 @@ circle {
 }
 .NextSectionArrowButton {
   position: absolute;
+  cursor: pointer;
   bottom: 12px;
   left: 0;
 }

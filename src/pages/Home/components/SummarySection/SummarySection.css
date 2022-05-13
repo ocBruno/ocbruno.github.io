@@ -1,5 +1,6 @@
 .SummarySection {
   display: flex;
+  margin-top: 6vmax;
   margin-bottom: 2vmax;
   padding-left: 1vmin;
 }

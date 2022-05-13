@@ -8,7 +8,7 @@ function SummarySection() {
       <img
         src={recruiteeAvatar}
         alt="Bruno's Portrait"
-        className="Recruitee-avatar"
+        className="RecruiteeAvatar"
       />
       <section>
         <h3>
