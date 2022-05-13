@@ -1,8 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 import gsap from "gsap";
 
 function HeroSection() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrollDown, setIsScrollDown] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const activeScrollPosition = window.scrollY;
+      if (activeScrollPosition < scrollPosition) {
+        setIsScrollDown(false);
+      } else {
+        setIsScrollDown(true);
+      }
+      setScrollPosition(activeScrollPosition);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    if (isScrollDown && window.scrollY > 260 && window.scrollY < 280) {
+      gsap.to(window, { duration: 0.5, scrollTo: ".SummarySection" });
+    }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isScrollDown, scrollPosition]);
+
   useEffect(() => {
     //  tween header box shadow style 3d
     gsap.to(".RecruiteeName", {
@@ -68,7 +90,6 @@ function HeroSection() {
           viewBox="0 0 1440 560"
         >
           <g clipPath='url("#SvgjsClipPath1175")' fill="none">
-            <rect width="1440" height="560" x="0" y="0" fill="#32325d"></rect>
             <g>
               <circle
                 className="circle"
