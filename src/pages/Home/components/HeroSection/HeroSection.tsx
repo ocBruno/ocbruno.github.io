@@ -12,7 +12,16 @@ function HeroSection() {
         scrub: true,
         markers: false,
       },
-      boxShadow: "20px -10px 10px rgba(0, 0, 0, 0.1)",
+      boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
+    });
+    gsap.to(".RecruiteeHeadline", {
+      scrollTrigger: {
+        trigger: "svg",
+        end: "bottom",
+        scrub: true,
+        markers: false,
+      },
+      boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
     });
     gsap.to("circle", {
       scrollTrigger: {

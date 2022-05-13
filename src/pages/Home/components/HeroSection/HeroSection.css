@@ -18,25 +18,25 @@
 .RecruiteeName {
   display: flex;
   align-items: center;
-  font-size: 13vmin;
+  padding: 0px 16px 0 12px;
   margin-bottom: 3px;
-  border-bottom: 1px solid #3a3b73;
+  font-size: 13vmin;
   border-top: 1px solid #6d8dc1;
-  padding-right: 21px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   transform: skewX(-12deg);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   user-select: none;
+  background: #32325d;
+  z-index: 5;
 }
 .RecruiteeHeadline {
-  transform: skewX(12deg);
+  margin-top: -2px;
+  margin-left: -3px;
+  padding: 3px 9px;
   border-bottom: 1px solid #3a3b73;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-  border-left: 1px solid #6d8dc1;
-  border-right: 1px solid #6d8dc1;
-  margin-left: -3px;
-  margin-top: -2px;
   user-select: none;
-  padding: 0 9px;
+  transform: skewX(12deg);
+  background: #32325d;
 }
 circle {
   -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.1));
