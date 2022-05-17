@@ -1,7 +1,8 @@
 .SummarySection {
   display: flex;
-  margin-top: 6vmax;
-  margin-bottom: 2vmax;
+  padding-top: 48px;
+  padding-bottom: 12px;
+  background: rgba(50, 50, 93, 0.69);
   padding-left: 1vmin;
 }
 .SummarySection ul {

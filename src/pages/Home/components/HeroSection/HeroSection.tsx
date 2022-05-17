@@ -14,6 +14,26 @@ function HeroSection() {
         markers: false,
       },
       boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
+      zIndex: 0,
+    });
+    gsap.to(".RecruiteeHeadline", {
+      scrollTrigger: {
+        trigger: "svg",
+        end: "bottom",
+        scrub: true,
+        markers: false,
+      },
+      boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
+      zIndex: 1,
+    });
+    gsap.to(".SectionHighlight", {
+      scrollTrigger: {
+        trigger: "svg",
+        end: "bottom",
+        scrub: true,
+        markers: false,
+      },
+      transform: "translateY(-200px)",
     });
 
     gsap.to("circle", {
@@ -29,21 +49,23 @@ function HeroSection() {
   }, []);
 
   const goToSummarySection = () => {
-    // make reusable smoothScrollTo
     gsap.to(window, { duration: 1, scrollTo: ".SummarySection" });
   };
   return (
     <div className="OuterContent HeroSection">
       {/* box shadow animate on scroll trigger */}
       <header className="RecruiteeHeader">
-        <h1 className="RecruiteeName">Bruno Costa</h1>
+        <h1 className="RecruiteeName">
+          Bruno Costa
+          <div className="SectionHighlight"></div>
+        </h1>
         <h2 className="RecruiteeHeadline">Frontend Web Developer</h2>
       </header>
       <button onClick={goToSummarySection} className="NextSectionArrowButton">
         <svg
           width="20px"
           height="20px"
-          fill="white"
+          fill="rgb(200, 200, 200)"
           viewBox="0 0 122.88 120.64"
           xmlSpace="preserve"
         >
