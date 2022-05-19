@@ -7,11 +7,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgb(58 57 134);
+  background: rgb(50 50 93);
   z-index: -1;
 }
 .Section-header {
-  margin-bottom: 1vmin;
+  margin-bottom: 1rem;
 }
 .section-subheader {
   color: rgba(255, 255, 255, 0.9);

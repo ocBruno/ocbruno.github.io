@@ -5,8 +5,8 @@
   align-items: flex-start;
   padding-top: 12px;
   padding-bottom: 24px;
-  background: rgba(50, 50, 93, 0.69);
-  padding-left: 1vmin;
+  background: rgb(40 40 64);
+  padding-left: 1rem;
 }
 .experience-header {
   font-size: 32px;
@@ -19,5 +19,8 @@
   align-items: flex-start;
   text-align: start;
   justify-content: flex-start;
-  margin-bottom: 1vmin;
+  margin-bottom: 1rem;
+}
+.experience-item p {
+  font-weight: 300;
 }

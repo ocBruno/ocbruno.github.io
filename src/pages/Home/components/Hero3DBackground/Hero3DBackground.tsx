@@ -1,7 +1,5 @@
-import gsap from "gsap";
 import React, { useEffect } from "react";
 import "./Hero3DBackground.css";
-import recruiteeAvatar from "./recruiteeAvatar.jpg";
 
 function Hero3DBackground() {
   useEffect(() => {

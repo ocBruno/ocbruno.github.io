@@ -76,7 +76,7 @@ circle {
   height: 100vh;
   width: auto;
   overflow-x: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -100,10 +100,11 @@ circle {
   transition: all 300ms ease-in;
 }
 .next-section-arrow-button:hover {
-  background: rgb(45, 46, 79, 96%);
+  background: rgb(57 58 104);
 }
 .next-section-arrow-button {
   cursor: pointer;
   padding: 12px;
+  z-index: 1;
   transition: all 300ms ease-in;
 }

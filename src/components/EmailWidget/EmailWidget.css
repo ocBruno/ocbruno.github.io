@@ -1,5 +1,6 @@
 .EmailWidgetContainer {
   position: fixed;
+  z-index: 5;
   bottom: 0;
   right: 0;
   transition: height 300ms, width 300ms;

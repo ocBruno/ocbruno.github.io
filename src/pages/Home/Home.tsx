@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
-import EmailWidget from "../../components/EmailWidget/EmailWidget";
 import HeroSection from "../Home/components/HeroSection/HeroSection";
 import SummarySection from "../Home/components/SummarySection/SummarySection";
 import ExperienceSection from "../Home/components/ExperienceSection/ExperienceSection";
@@ -28,7 +27,7 @@ function Home() {
       <SummarySection />
       <ExperienceSection />
 
-      <EmailWidget />
+      {/* <EmailWidget /> */}
     </div>
   );
 }

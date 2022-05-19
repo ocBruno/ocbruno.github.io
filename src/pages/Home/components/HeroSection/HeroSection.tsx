@@ -45,7 +45,8 @@ function HeroSection() {
         markers: false,
       },
       filter: "drop-shadow( 4px -6px 2px rgba(0, 0, 0, 0.1))",
-      transform: "rotateZ(2deg)",
+      opacity: "0",
+      transform: "rotate(20deg)",
     });
   }, []);
 
