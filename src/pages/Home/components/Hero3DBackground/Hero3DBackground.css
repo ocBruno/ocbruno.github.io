@@ -1,0 +1,111 @@
+.scene-container {
+  perspective: 30em;
+  perspective-origin: 50% calc(50% - 2rem);
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+  animation: scene-spinning 3s linear 0s infinite;
+}
+@keyframes scene-spinning {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+.floor {
+  width: 19rem;
+  height: 20rem;
+  background: var(--floorColor);
+  z-index: -1;
+  transform: translate(51%, 76%) rotateX(90deg);
+  background-image: url("./Whangaehu.svg");
+  position: absolute;
+}
+.ball {
+  height: 2rem;
+  border-radius: 100%;
+  width: 2rem;
+  background: var(--ballColor);
+  position: absolute;
+}
+.cube {
+  height: 8rem;
+  width: 8rem;
+  position: absolute;
+  left: calc(50% - 2rem);
+  top: calc(50% - 2rem);
+  transform-style: preserve-3d;
+  animation: spinning 5s linear 0s infinite;
+}
+@keyframes spinning {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.front,
+.back,
+.top,
+.bottom,
+.left,
+.right {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid rgb(223 154 189);
+  box-shadow: 0rem 0rem 0.5rem 0 #883f64 inset;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* rotationAngle === 30deg */
+.front {
+  background: var(--boxColor);
+  transform: translateZ(0rem);
+  opacity: 0;
+  animation: appear 100ms ease-in 100ms forwards;
+}
+.back {
+  background: var(--boxColor);
+  transform: translateZ(8rem);
+  opacity: 0;
+  animation: appear 1s ease-in 200ms forwards;
+}
+.right {
+  background: var(--boxColor);
+  transform: translate3d(-4rem, 0rem, 4rem) rotateY(90deg);
+  opacity: 0;
+  animation: appear 1s ease-in 300ms forwards;
+}
+.left {
+  background: var(--boxColor);
+  transform: translate3d(4rem, 0rem, 4rem) rotateY(90deg);
+  opacity: 0;
+  animation: appear 1s ease-in 400ms forwards;
+}
+.top {
+  background: var(--boxColor);
+  transform: rotateX(90deg) translate3d(0rem, 4rem, 4rem);
+  opacity: 0;
+  animation: appear 1s ease-in 500ms forwards;
+}
+.bottom {
+  background: var(--boxColor);
+  transform: rotateX(90deg) translate3d(0rem, 4rem, -4rem);
+  opacity: 0;
+  animation: appear 1s ease-in 600ms forwards;
+}

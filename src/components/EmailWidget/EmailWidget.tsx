@@ -4,8 +4,8 @@ import emailLogo from "./email-logo.png";
 
 const getEmailWidgetClassName = (isOpen: boolean) => {
   return isOpen
-    ? "EmailWidget-container EmailWidget-open-style"
-    : "EmailWidget-container EmailWidget-closed-style";
+    ? "EmailWidgetContainer EmailWidgetOpenStyle"
+    : "EmailWidgetContainer EmailWidgetClosedStyle";
 };
 
 function EmailWidget() {
@@ -14,19 +14,14 @@ function EmailWidget() {
     <aside className={`${getEmailWidgetClassName(isEmailWidgetOpen)}`}>
       <button
         onClick={(e) => setIsEmailWidgetOpen(true)}
-        className="Send-email-button"
+        className="SendEmailButton"
       >
-        <img
-          className="Send-email-button-icon"
-          src={emailLogo}
-          alt="Email icon"
-        />
-        Email
+        <img className="SendEmailButtonIcon" src={emailLogo} alt="Email icon" />
       </button>
-      <section className="Send-email-container">
+      <section className="SendEmailContainer">
         <button
           onClick={(e) => setIsEmailWidgetOpen(false)}
-          className="Send-email-close-button"
+          className="SendEmailCloseButton"
         >
           <svg
             viewBox="0 0 12 12"
@@ -52,17 +47,17 @@ function EmailWidget() {
           </svg>
         </button>
         <form
-          className="Send-email-form"
+          className="SendEmailForm"
           action="mailto:contact@yourdomain.com"
           method="POST"
           encType="multipart/form-data"
           name="EmailForm"
         >
-          <label htmlFor="Subject">Subject:</label>
-          <input type="text" name="Subject" />
-          <label htmlFor="Message">Message:</label>
-          <textarea name="Message"></textarea>
-          <input type="submit" value="Send" />
+          <label htmlFor="Subject">Subject</label>
+          <input type="text" name="Subject" className="SendEmailFormInput" />
+          <label htmlFor="Message">Message</label>
+          <textarea name="Message" className="SendEmailFormInput"></textarea>
+          <input className="SendButton" type="submit" value="Send" />
         </form>
       </section>
     </aside>

@@ -1,11 +1,11 @@
-.SummarySection {
+.summary-section {
   display: flex;
   padding-top: 48px;
   padding-bottom: 12px;
   background: rgba(50, 50, 93, 0.69);
   padding-left: 1vmin;
 }
-.SummarySection ul {
+.summary-section ul {
   padding: 0;
   font-size: 13px;
   margin-top: 6px;

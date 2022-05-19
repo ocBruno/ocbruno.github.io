@@ -7,11 +7,11 @@ function SummarySection() {
     //  tween header box shadow style 3d
   }, []);
   return (
-    <section id="Summary_Section" className="SummarySection">
+    <section id="Summary_Section" className="summary-section">
       <img
         src={recruiteeAvatar}
         alt="Bruno's Portrait"
-        className="RecruiteeAvatar"
+        className="recruitee-avatar"
       />
       <section>
         <h3>

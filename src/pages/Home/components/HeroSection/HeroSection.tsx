@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import "./HeroSection.css";
 import gsap from "gsap";
+import Hero3DBackground from "../Hero3DBackground/Hero3DBackground";
 
 function HeroSection() {
   useEffect(() => {
     //  tween header box shadow style 3d
 
-    gsap.to(".RecruiteeName", {
+    gsap.to(".recruitee-name", {
       scrollTrigger: {
         trigger: "svg",
         end: "bottom",
@@ -16,7 +17,7 @@ function HeroSection() {
       boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
       zIndex: 0,
     });
-    gsap.to(".RecruiteeHeadline", {
+    gsap.to(".recruitee-headline", {
       scrollTrigger: {
         trigger: "svg",
         end: "bottom",
@@ -26,7 +27,7 @@ function HeroSection() {
       boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
       zIndex: 1,
     });
-    gsap.to(".SectionHighlight", {
+    gsap.to(".section-highlight", {
       scrollTrigger: {
         trigger: "svg",
         end: "bottom",
@@ -44,24 +45,28 @@ function HeroSection() {
         markers: false,
       },
       filter: "drop-shadow( 4px -6px 2px rgba(0, 0, 0, 0.1))",
-      transform: "rotateZ(20deg)",
+      transform: "rotateZ(2deg)",
     });
   }, []);
 
   const goToSummarySection = () => {
-    gsap.to(window, { duration: 1, scrollTo: ".SummarySection" });
+    gsap.to(window, { duration: 1, scrollTo: ".summary-section" });
   };
   return (
-    <div className="OuterContent HeroSection">
+    <div className="OuterContent hero-section">
       {/* box shadow animate on scroll trigger */}
       <header className="RecruiteeHeader">
-        <h1 className="RecruiteeName">
+        <Hero3DBackground />
+        <h1 className="recruitee-name">
           Bruno Costa
-          <div className="SectionHighlight"></div>
+          <div className="section-highlight"></div>
         </h1>
-        <h2 className="RecruiteeHeadline">Frontend Web Developer</h2>
+        <h2 className="recruitee-headline">Frontend Developer</h2>
       </header>
-      <button onClick={goToSummarySection} className="NextSectionArrowButton">
+      <button
+        onClick={goToSummarySection}
+        className="next-section-arrow-button"
+      >
         <svg
           width="20px"
           height="20px"
@@ -74,11 +79,11 @@ function HeroSection() {
           </g>
         </svg>
       </button>
-      <div className="BackgroundContainer">
+      <div className="background-container">
         <svg
           width="1440"
           height="560"
-          className="RecruiteeBackground"
+          className="recruitee-background"
           viewBox="0 0 1440 560"
         >
           <g clipPath='url("#SvgjsClipPath1175")' fill="none">

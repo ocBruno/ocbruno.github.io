@@ -1,9 +1,9 @@
-.HeroSection {
+.hero-section {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
-.SectionHighlight {
+.section-highlight {
   z-index: -1;
   user-select: none;
   opacity: 0.3;
@@ -34,7 +34,7 @@
   height: 100vh;
 }
 
-.RecruiteeName {
+.recruitee-name {
   display: flex;
   align-items: center;
   padding: 0px 16px 0 12px;
@@ -49,7 +49,7 @@
   z-index: 1;
   position: relative;
 }
-.RecruiteeHeadline {
+.recruitee-headline {
   margin-top: -3px;
   padding: 3px 9px;
   border-bottom: 1px solid #3a3b73;
@@ -65,14 +65,14 @@ circle {
   filter: drop-shadow(3px 6px 2px rgba(0, 0, 0, 0.1));
 }
 
-.RecruiteeAvatar {
+.recruitee-avatar {
   height: 12vmin;
   margin-right: 21px;
   border-right: 1px solid;
   padding-right: 21px;
 }
 
-.RecruiteeBackground {
+.recruitee-background {
   height: 100vh;
   width: auto;
   overflow-x: hidden;
@@ -80,10 +80,10 @@ circle {
   top: 0;
   left: 0;
 }
-.RecruiteeBackground > g > g {
+.recruitee-background > g > g {
   transform: translate(-24%, 5%);
 }
-.BackgroundContainer {
+.background-container {
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -95,14 +95,14 @@ circle {
   left: 0;
 }
 
-.NextSectionArrowButton:hover > svg {
+.next-section-arrow-button:hover > svg {
   fill: rgb(255, 255, 255);
   transition: all 300ms ease-in;
 }
-.NextSectionArrowButton:hover {
+.next-section-arrow-button:hover {
   background: rgb(45, 46, 79, 96%);
 }
-.NextSectionArrowButton {
+.next-section-arrow-button {
   cursor: pointer;
   padding: 12px;
   transition: all 300ms ease-in;

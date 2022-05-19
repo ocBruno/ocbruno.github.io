@@ -1,30 +1,33 @@
-.EmailWidget-container {
+.EmailWidgetContainer {
   position: fixed;
   bottom: 0;
   right: 0;
   transition: height 300ms, width 300ms;
-  background: rgb(239 239 239);
+  background: rgb(84 91 141);
 }
 
-.EmailWidget-open-style {
+.EmailWidgetOpenStyle {
   width: 24vmin;
   height: 24vmin;
-  padding: 1vmin;
+  padding: 12px;
 }
-.EmailWidget-open-style > .Send-email-button {
+.EmailWidgetOpenStyle > .SendEmailButton {
   display: none;
+  width: auto;
+  height: auto;
 }
-.Send-email-container {
+
+.SendEmailContainer {
   display: flex;
   flex-direction: column;
 }
-.Send-email-close-button {
+.SendEmailCloseButton {
   width: 2vmin;
   cursor: pointer;
   align-self: flex-end;
   height: 2vmin;
 }
-.Send-email-button {
+.SendEmailButton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,17 +35,17 @@
   width: 100%;
   height: 100%;
 }
-.EmailWidget-closed-style > .Send-email-container,
-.EmailWidget-closed-style {
+.EmailWidgetClosedStyle > .SendEmailContainer,
+.EmailWidgetClosedStyle {
   border-radius: 12px 0 0 0;
-  width: 12vmin;
-  height: 6vmin;
+  width: 48px;
+  height: 48px;
 }
-.EmailWidget-closed-style > .Send-email-button {
+.EmailWidgetClosedStyle > .SendEmailButton {
   display: flex;
 }
 
-.Send-email-button-icon {
+.SendEmailButtonIcon {
   width: 5vmin;
   height: 5vmin;
   background: rgb(250 250 250);
@@ -52,16 +55,20 @@
   border-radius: 32px;
 }
 
-.Send-email-form {
+.SendEmailForm {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.Send-email-form > input,
-.Send-email-form > textarea {
+.SendEmailForm > label {
+  margin-bottom: 6px;
+}
+.SendEmailFormInput {
   resize: none;
   width: 90%;
 }
-.Send-email-form > input[type="submit"] {
+.SendEmailForm > .SendButton {
+  border: none;
+  background: rgb(184 191 241);
   margin-top: 1rem;
 }

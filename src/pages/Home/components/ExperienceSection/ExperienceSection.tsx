@@ -3,10 +3,10 @@ import "./ExperienceSection.css";
 
 function ExperienceSection() {
   return (
-    <section className="ExperienceSection">
-      <h2 className="ExperienceHeader">Experience</h2>
-      <article className="Experience">
-        <h3 className="Section-subheader">Leankeep - Facility Software</h3>
+    <section className="experience-section">
+      <h2 className="experience-header">Experience</h2>
+      <article className="experience-item">
+        <h3 className="section-subheader">Leankeep - Facility Software</h3>
         <i> Junior Frontend Developer </i>
         <div>April 2021 - March 2022 (1 year)</div>
         <div>Curitiba, Paraná, Brazil</div>
@@ -17,8 +17,8 @@ function ExperienceSection() {
           with daily / weekly meetings.
         </div>
       </article>
-      <article className="Experience">
-        <h3 className="Section-subheader">Rhavi Carneiro's Fluency Academy </h3>
+      <article className="experience-item">
+        <h3 className="section-subheader">Rhavi Carneiro's Fluency Academy </h3>
         <i>Junior Frontend Web Developer</i>
         <div>Curitiba, Paraná, Brazil</div>
         <div>February 2020-November 2020 (10 months)</div>
@@ -27,8 +27,8 @@ function ExperienceSection() {
         frameworks/libraries creatingresponsive reusable components in an agile
         team with daily / weeklytech meetings in English and Portuguese.
       </article>
-      <article className="Experience">
-        <h3 className="Section-subheader"> Dohms Web</h3>
+      <article className="experience-item">
+        <h3 className="section-subheader"> Dohms Web</h3>
         <i> Web Development Intern </i>
         <div>May 2019 - September 2019 (5 months)</div>
         <div>Curitiba, Paraná, Brazil</div>

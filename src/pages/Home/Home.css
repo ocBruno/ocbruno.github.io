@@ -1,16 +1,19 @@
-.HomePageBgContainer {
+.home-page-container {
+  font-family: Lato;
+}
+.home-page-bg-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #32325d;
+  background: rgb(58 57 134);
   z-index: -1;
 }
 .Section-header {
   margin-bottom: 1vmin;
 }
-.Section-subheader {
+.section-subheader {
   color: rgba(255, 255, 255, 0.9);
 }
 
