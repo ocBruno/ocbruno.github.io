@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/curriculum/static/css/main.5913cbf6.css",
-    "main.js": "/curriculum/static/js/main.7340ae3e.js",
+    "main.css": "/curriculum/static/css/main.cc782390.css",
+    "main.js": "/curriculum/static/js/main.b959273b.js",
     "static/js/787.595c645d.chunk.js": "/curriculum/static/js/787.595c645d.chunk.js",
     "static/media/recruiteeAvatar.jpg": "/curriculum/static/media/recruiteeAvatar.5a6106c60c1ab45fa023.jpg",
     "index.html": "/curriculum/index.html",
-    "main.5913cbf6.css.map": "/curriculum/static/css/main.5913cbf6.css.map",
-    "main.7340ae3e.js.map": "/curriculum/static/js/main.7340ae3e.js.map",
+    "static/media/Whangaehu.svg": "/curriculum/static/media/Whangaehu.88801a71321c4e266459.svg",
+    "main.cc782390.css.map": "/curriculum/static/css/main.cc782390.css.map",
+    "main.b959273b.js.map": "/curriculum/static/js/main.b959273b.js.map",
     "787.595c645d.chunk.js.map": "/curriculum/static/js/787.595c645d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5913cbf6.css",
-    "static/js/main.7340ae3e.js"
+    "static/css/main.cc782390.css",
+    "static/js/main.b959273b.js"
   ]
 }
