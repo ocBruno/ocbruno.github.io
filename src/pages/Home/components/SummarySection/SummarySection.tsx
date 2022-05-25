@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./SummarySection.css";
-import recruiteeAvatar from "./recruiteeAvatar.jpg";
 
 function SummarySection() {
   useEffect(() => {
@@ -8,11 +7,8 @@ function SummarySection() {
   }, []);
   return (
     <section id="Summary_Section" className="summary-section">
-      <img
-        src={recruiteeAvatar}
-        alt="Bruno's Portrait"
-        className="recruitee-avatar"
-      />
+      <div></div>
+
       <section>
         <h3>
           A frontend web developer searching for a new remote opportunity!

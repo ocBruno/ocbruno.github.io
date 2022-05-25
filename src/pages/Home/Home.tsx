@@ -4,6 +4,7 @@ import HeroSection from "../Home/components/HeroSection/HeroSection";
 import SummarySection from "../Home/components/SummarySection/SummarySection";
 import ExperienceSection from "../Home/components/ExperienceSection/ExperienceSection";
 import gsap from "gsap";
+import Footer from "./components/Footer/Footer";
 
 function Home() {
   useEffect(() => {
@@ -27,7 +28,7 @@ function Home() {
       <SummarySection />
       <ExperienceSection />
 
-      {/* <EmailWidget /> */}
+      <Footer />
     </div>
   );
 }
