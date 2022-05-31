@@ -1,18 +1,20 @@
 import React, { useEffect } from "react";
+import { fadeInElement } from "../../../../utils/gsap";
 import "./SummarySection.css";
 
 function SummarySection() {
   useEffect(() => {
     //  tween header box shadow style 3d
+    fadeInElement(".summary-section");
   }, []);
   return (
     <section id="Summary_Section" className="summary-section">
       <div></div>
 
       <section>
-        <h3>
+        <h2>
           A frontend web developer searching for a new remote opportunity!
-        </h3>
+        </h2>
         <ul>
           <li>
             2+ years of work experience using multiple languages, libraries and

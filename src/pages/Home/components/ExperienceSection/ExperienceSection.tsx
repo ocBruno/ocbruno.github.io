@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { fadeInElement } from "../../../../utils/gsap";
 import "./ExperienceSection.css";
 
 function ExperienceSection() {
+  useEffect(() => {
+    //  tween header box shadow style 3d
+    fadeInElement(".experience-section");
+  }, []);
   return (
     <section className="experience-section">
       <h2 className="experience-header">Experience</h2>
@@ -36,9 +41,7 @@ function ExperienceSection() {
         <div>Curitiba, Paraná, Brazil</div>
         <p>
           Develop and maintain systems and websites using HTML, CSS,
-          Javascript,Vue, MSSQL, Salesforce, among others. Education
-          Universidade Tuiuti do Paraná Associate's degree, Graphic Design ·
-          (2016 - 2018)
+          Javascript,Vue, MSSQL, Salesforce, among others.
         </p>
       </article>
     </section>

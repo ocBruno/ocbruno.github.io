@@ -36,7 +36,15 @@ function HeroSection() {
       },
       transform: "translateY(-200px)",
     });
-
+    // gsap.fromTo(
+    //   ".recruitee-name",
+    //   {
+    //     left: "-100vw",
+    //   },
+    //   {
+    //     left: "0",
+    //   }
+    // );
     gsap.to("circle", {
       scrollTrigger: {
         trigger: "svg",
@@ -56,7 +64,7 @@ function HeroSection() {
   return (
     <div className="OuterContent hero-section">
       {/* box shadow animate on scroll trigger */}
-      <header className="RecruiteeHeader">
+      <header className="recruitee-header">
         <Hero3DBackground />
         <h1 className="recruitee-name">
           Bruno Costa
