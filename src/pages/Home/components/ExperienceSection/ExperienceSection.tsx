@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { fadeInElement } from "../../../../utils/gsap";
-import "./ExperienceSection.css";
+import "./ExperienceSection.scss";
 
 function ExperienceSection() {
   useEffect(() => {

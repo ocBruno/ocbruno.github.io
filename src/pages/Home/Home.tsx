@@ -1,23 +1,11 @@
-import React, { useEffect } from "react";
-import "./Home.css";
+import React from "react";
+import "./Home.scss";
 import HeroSection from "../Home/components/HeroSection/HeroSection";
 import SummarySection from "../Home/components/SummarySection/SummarySection";
 import ExperienceSection from "../Home/components/ExperienceSection/ExperienceSection";
-import gsap from "gsap";
 import Footer from "./components/Footer/Footer";
 
 function Home() {
-  useEffect(() => {
-    //  tween header box shadow style 3d
-    gsap.to(".home-page-bg-container", {
-      scrollTrigger: {
-        end: "bottom",
-        scrub: true,
-        markers: false,
-      },
-      background: "rgba(0, 0 ,0, 0.0)",
-    });
-  }, []);
   const handleScroll = (e: Object) => {
     console.log(e);
   };

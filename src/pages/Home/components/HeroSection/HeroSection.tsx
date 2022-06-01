@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./HeroSection.css";
+import "./HeroSection.scss";
 import gsap from "gsap";
 import Hero3DBackground from "../Hero3DBackground/Hero3DBackground";
 
@@ -27,24 +27,7 @@ function HeroSection() {
       boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
       zIndex: 1,
     });
-    gsap.to(".section-highlight", {
-      scrollTrigger: {
-        trigger: "svg",
-        end: "bottom",
-        scrub: true,
-        markers: false,
-      },
-      transform: "translateY(-200px)",
-    });
-    // gsap.fromTo(
-    //   ".recruitee-name",
-    //   {
-    //     left: "-100vw",
-    //   },
-    //   {
-    //     left: "0",
-    //   }
-    // );
+
     gsap.to("circle", {
       scrollTrigger: {
         trigger: "svg",
@@ -66,10 +49,7 @@ function HeroSection() {
       {/* box shadow animate on scroll trigger */}
       <header className="recruitee-header">
         <Hero3DBackground />
-        <h1 className="recruitee-name">
-          Bruno Costa
-          <div className="section-highlight"></div>
-        </h1>
+        <h1 className="recruitee-name">Bruno Costa</h1>
         <h2 className="recruitee-headline">Frontend Developer</h2>
       </header>
       <button
@@ -102,49 +82,49 @@ function HeroSection() {
                 r="24.18"
                 cx="381"
                 cy="116.08"
-                fill="url(#SvgjsLinearGradient1176)"
+                stroke="url(#SvgjsLinearGradient1176)"
               ></circle>
               <circle
                 r="54.27"
                 cx="1400"
                 cy="267.45"
-                fill="url(#SvgjsLinearGradient1177)"
+                stroke="url(#SvgjsLinearGradient1177)"
               ></circle>
               <circle
                 r="38.83"
                 cx="620.71"
                 cy="529.33"
-                fill="url(#SvgjsLinearGradient1178)"
+                stroke="url(#SvgjsLinearGradient1178)"
               ></circle>
               <circle
                 r="32.675"
                 cx="534.22"
                 cy="510.25"
-                fill="url(#SvgjsLinearGradient1179)"
+                stroke="url(#SvgjsLinearGradient1179)"
               ></circle>
               <circle
                 r="20.935"
                 cx="1154.33"
                 cy="357.66"
-                fill="url(#SvgjsLinearGradient1180)"
+                stroke="url(#SvgjsLinearGradient1180)"
               ></circle>
               <circle
                 r="37.98"
                 cx="573.32"
                 cy="465.88"
-                fill="url(#SvgjsLinearGradient1181)"
+                stroke="url(#SvgjsLinearGradient1181)"
               ></circle>
               <circle
                 r="46.395"
                 cx="720.88"
                 cy="357.06"
-                fill="url(#SvgjsLinearGradient1182)"
+                stroke="url(#SvgjsLinearGradient1182)"
               ></circle>
               <circle
                 r="37.88"
                 cx="244.14"
                 cy="445.55"
-                fill="url(#SvgjsLinearGradient1183)"
+                stroke="url(#SvgjsLinearGradient1183)"
               ></circle>
             </g>
           </g>

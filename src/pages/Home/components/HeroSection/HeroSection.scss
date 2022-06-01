@@ -3,26 +3,7 @@
   flex-direction: column;
   height: 100vh;
 }
-.section-highlight {
-  z-index: -1;
-  user-select: none;
-  opacity: 0.3;
-  pointer-events: none;
-  background: linear-gradient(
-    0deg,
-    rgba(93, 81, 218, 1) 0%,
-    rgba(93, 81, 218, 1) 12%,
-    rgba(168, 192, 255, 1) 42%,
-    rgba(161, 182, 252, 1) 59%,
-    rgba(99, 89, 221, 1) 78%,
-    rgba(99, 89, 221, 1) 100%
-  );
-  top: -60px;
-  height: 320px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-}
+
 /* Header */
 .recruitee-header {
   display: flex;
@@ -42,7 +23,6 @@
   font-size: 13vmin;
   border-top: 1px solid #6d8dc1;
   border-radius: 0px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   user-select: none;
   background: #32325d;
   overflow: hidden;
@@ -53,7 +33,6 @@
   margin-top: -3px;
   padding: 3px 9px;
   border-bottom: 1px solid #3a3b73;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   user-select: none;
   background: #434184;
   font-weight: 300;
@@ -93,11 +72,10 @@ circle {
   transition: all 300ms ease-in;
 }
 .next-section-arrow-button:hover {
-  background: rgb(57 58 104);
+  background: rgba(255, 255, 255, 0.05);
 }
 .next-section-arrow-button {
   cursor: pointer;
-  background: rgb(50, 50, 93);
   padding: 12px;
   z-index: 1;
   transition: all 300ms ease-in;

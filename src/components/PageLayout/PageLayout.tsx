@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./PageLayout.css";
+import "./PageLayout.scss";
 type PageLayoutProps = {
   children: React.ReactNode;
 };

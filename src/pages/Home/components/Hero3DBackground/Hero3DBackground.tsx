@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Hero3DBackground.css";
+import "./Hero3DBackground.scss";
 
 function Hero3DBackground() {
   useEffect(() => {
