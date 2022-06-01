@@ -1,10 +1,10 @@
-:root {
-  --highlights: #d1ceff;
-  --midtone: #5f75af;
-  --shadow: #27324e;
-
-  --ballColor: #5f75af;
-  --boxColor: #7585ff04;
-  --themePink: #9c72b0;
-  --floorColor: #53538d;
+$theme-purple: #53538d;
+$theme-pink: #9c72b0;
+$text-color: #e9e9e9;
+body {
+  color: $text-color;
+}
+.neomorph {
+  background: linear-gradient(165deg, #3a404d, #24282f);
+  box-shadow: 5px 5px 21px #22252c, -5px -5px 21px #2e333c;
 }

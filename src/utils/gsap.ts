@@ -1,6 +1,6 @@
 import gsap from "gsap";
 
-export const fadeInElement = (className: String) => {
+export const fadeInElement = (className: string) => {
   return gsap.to(className, {
     scrollTrigger: {
       trigger: className,
@@ -8,4 +8,8 @@ export const fadeInElement = (className: String) => {
     opacity: "1",
     duration: 0.33,
   });
+};
+
+export const scrollToClassName = (className: string) => {
+  gsap.to(window, { duration: 1, scrollTo: className });
 };

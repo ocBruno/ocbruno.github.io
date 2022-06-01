@@ -8,12 +8,12 @@ function SummarySection() {
     fadeInElement(".summary-section");
   }, []);
   return (
-    <section id="Summary_Section" className="summary-section">
+    <section id="Summary_Section" className="summary-section neomorph">
       <div></div>
 
       <section>
         <h2>
-          A frontend web developer searching for a new remote opportunity!
+          Frontend react developer searching for a new remote opportunity!
         </h2>
         <ul>
           <li>

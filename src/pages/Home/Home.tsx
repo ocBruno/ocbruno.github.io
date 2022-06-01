@@ -4,6 +4,7 @@ import HeroSection from "../Home/components/HeroSection/HeroSection";
 import SummarySection from "../Home/components/SummarySection/SummarySection";
 import ExperienceSection from "../Home/components/ExperienceSection/ExperienceSection";
 import Footer from "./components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
 
 function Home() {
   const handleScroll = (e: Object) => {
@@ -12,10 +13,10 @@ function Home() {
   return (
     <div className="home-page-container" onWheel={handleScroll}>
       <div className="home-page-bg-container"></div>
+      <Navbar />
       <HeroSection />
       <SummarySection />
       <ExperienceSection />
-
       <Footer />
     </div>
   );

@@ -1,20 +1,20 @@
 import React from "react";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { scrollToClassName } from "../../utils/gsap";
 
 function Navbar() {
   return (
-    <nav className="NavbarContainer">
-      <ul className="NavbarLinks">
+    <nav className="navbar-container ">
+      <ul className="navbar-links">
         <li>
-          {/* only show after 100% of vh has been scrolled */}
-          {/* <Link to="/">Who </Link> */}
+          <button onClick={() => scrollToClassName(".summary-section")}>
+            Summary
+          </button>
         </li>
         <li>
-          <Link to="/summary">Summary</Link>
-        </li>
-        <li>
-          <Link to="/experience">Experience</Link>
+          <button onClick={() => scrollToClassName(".experience-section")}>
+            Experience
+          </button>
         </li>
       </ul>
     </nav>

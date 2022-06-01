@@ -1,59 +1,23 @@
 import React, { useEffect } from "react";
 import "./HeroSection.scss";
-import gsap from "gsap";
 import Hero3DBackground from "../Hero3DBackground/Hero3DBackground";
+import { scrollToClassName } from "../../../../utils/gsap";
 
 function HeroSection() {
   useEffect(() => {
     //  tween header box shadow style 3d
-
-    gsap.to(".recruitee-name", {
-      scrollTrigger: {
-        trigger: "svg",
-        end: "bottom",
-        scrub: true,
-        markers: false,
-      },
-      boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
-      zIndex: 0,
-    });
-    gsap.to(".recruitee-headline", {
-      scrollTrigger: {
-        trigger: "svg",
-        end: "bottom",
-        scrub: true,
-        markers: false,
-      },
-      boxShadow: "10px -10px 10px rgba(0, 0, 0, 0.1)",
-      zIndex: 1,
-    });
-
-    gsap.to("circle", {
-      scrollTrigger: {
-        trigger: "svg",
-        end: "bottom",
-        scrub: true,
-        markers: false,
-      },
-      filter: "drop-shadow( 4px -6px 2px rgba(0, 0, 0, 0.1))",
-      opacity: "0",
-      transform: "rotate(20deg)",
-    });
   }, []);
 
-  const goToSummarySection = () => {
-    gsap.to(window, { duration: 1, scrollTo: ".summary-section" });
-  };
   return (
     <div className="OuterContent hero-section">
       {/* box shadow animate on scroll trigger */}
       <header className="recruitee-header">
         <Hero3DBackground />
-        <h1 className="recruitee-name">Bruno Costa</h1>
-        <h2 className="recruitee-headline">Frontend Developer</h2>
+        <h1 className="recruitee-name neomorph">Bruno Costa</h1>
+        <h2 className="recruitee-headline neomorph">Frontend Developer</h2>
       </header>
       <button
-        onClick={goToSummarySection}
+        onClick={() => scrollToClassName(".summary-section")}
         className="next-section-arrow-button"
       >
         <svg

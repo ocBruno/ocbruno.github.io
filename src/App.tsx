@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import PageLayout from "./components/PageLayout/PageLayout";
 
 function App() {
+  useEffect(() => {
+    let dots = 0;
+
+    setInterval(() => {
+      if (dots === 0) {
+        dots++;
+      } else {
+        dots = 0;
+      }
+      document.title = "Contact Me " + "|".repeat(dots);
+    }, 1000);
+  }, []);
+
   return (
     <BrowserRouter>
-      <PageLayout>
-        <Routes>
-          <Route path="/curriculum" element={<Home />} />
-          {/* <Route path="/products/:id" component={Product} /> */}
-        </Routes>
-      </PageLayout>
+      <Routes>
+        <Route path="/curriculum" element={<Home />} />
+      </Routes>
     </BrowserRouter>
   );
 }

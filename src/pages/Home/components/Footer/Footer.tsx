@@ -6,7 +6,7 @@ function Footer() {
     //  tween header box shadow style 3d
   }, []);
   return (
-    <div className="footer">
+    <div className="footer neomorph">
       <a
         className="whatsapp-link footer-link"
         target="_blank"
