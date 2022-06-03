@@ -1,6 +1,6 @@
 {
-  "name": "curriculum",
-  "homepage": "https://ocbruno.github.io/curriculum",
+  "name": "portfolio",
+  "homepage": "https://ocbruno.github.io/portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
