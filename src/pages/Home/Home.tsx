@@ -7,15 +7,12 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import FixedEmailForm from "../../components/FixedEmailForm/FixedEmailForm";
 import { useEmail } from "../../contexts/EmailContext";
+import NewsDropdown from "./components/NewsDropdown/NewsDropdown";
 
 function Home() {
   const [{ isFormActive }, dispatch] = useEmail();
   const handleScroll = (e: Object) => {
-    if (
-      Math.ceil(window.innerHeight + window.scrollY) >=
-        document.documentElement.scrollHeight &&
-      !isFormActive
-    ) {
+    if (Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight && !isFormActive) {
       dispatch({ type: "TOGGLE_FORM_ACTIVE" });
       console.log("form active");
     }
@@ -23,8 +20,9 @@ function Home() {
   return (
     <div className="home-page-container" onWheel={handleScroll}>
       <div className="home-page-bg-container"></div>
-      {/* <FixedEmailForm /> */}
+      <FixedEmailForm />
       <Navbar />
+      <NewsDropdown />
       <HeroSection />
       <SummarySection />
       <ExperienceSection />

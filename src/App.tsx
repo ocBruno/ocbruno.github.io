@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import { EmailProvider } from "./contexts/EmailContext";
 import { ThemeProvider } from "styled-components";
+import { NewsProvider } from "./contexts/NewsContext";
 
 function App() {
   useEffect(() => {
@@ -40,7 +41,9 @@ function App() {
             path="/portfolio"
             element={
               <EmailProvider>
-                <Home />
+                <NewsProvider>
+                  <Home />
+                </NewsProvider>
               </EmailProvider>
             }
           />
