@@ -5,7 +5,7 @@ import "./SummarySection.scss";
 function SummarySection() {
   useEffect(() => {
     //  tween header box shadow style 3d
-    fadeInElement(".summary-section");
+    fadeInElement(".summary-section", 0.66);
   }, []);
   return (
     <section id="Summary_Section" className="summary-section neomorph">

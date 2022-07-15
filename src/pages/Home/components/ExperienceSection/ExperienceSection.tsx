@@ -5,7 +5,7 @@ import "./ExperienceSection.scss";
 function ExperienceSection() {
   useEffect(() => {
     //  tween header box shadow style 3d
-    fadeInElement(".experience-section");
+    fadeInElement(".experience-section", 2.1);
   }, []);
   return (
     <section className="experience-section">

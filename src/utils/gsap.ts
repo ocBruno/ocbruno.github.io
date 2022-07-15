@@ -1,12 +1,12 @@
 import gsap from "gsap";
 
-export const fadeInElement = (className: string) => {
+export const fadeInElement = (className: string, duration: number) => {
   return gsap.to(className, {
     scrollTrigger: {
       trigger: className,
     },
     opacity: "1",
-    duration: 0.33,
+    duration: duration,
   });
 };
 
