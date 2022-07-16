@@ -41,7 +41,7 @@ const DynamicThemeContext = React.createContext({} as IDynamicThemeContext);
 DynamicThemeContext.displayName = "ThemeContet";
 
 const DynamicThemeProvider = ({ children }: { children: JSX.Element }) => {
-  const [activeTheme, setActiveTheme] = React.useState(light);
+  const [activeTheme, setActiveTheme] = React.useState(dark);
   const toggleTheme = React.useCallback(() => {
     setActiveTheme(activeTheme.name === "dark" ? light : dark);
   }, [activeTheme]);

@@ -11,16 +11,20 @@ function Navbar() {
     <NavbarContainer>
       <NavbarLinks>
         <li>
-          <button onClick={() => scrollToClassName(".summary-section")}>Summary</button>
+          <button onClick={() => scrollToClassName(".summary-section")}>
+            Summary
+          </button>
         </li>
         <li>
-          <button onClick={() => scrollToClassName(".experience-section")}>Experience</button>
+          <button onClick={() => scrollToClassName(".experience-section")}>
+            Experience
+          </button>
         </li>
-        <li>
+        {/* <li>
           <LocalNewsButton onClick={() => dispatch({ type: "TOGGLE_DROPDOWN" })}>
             {isDropdownActive ? `Close News` : `Top News`}
           </LocalNewsButton>
-        </li>
+        </li> */}
         <li>
           <button onClick={() => toggleTheme()}>Invert theme</button>
         </li>
