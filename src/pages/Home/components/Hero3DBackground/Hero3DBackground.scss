@@ -20,31 +20,7 @@ $box-color: #7585ff04;
     transform: rotateX(360deg);
   }
 }
-.floor {
-  width: 19rem;
-  height: 20rem;
-  background: var(--floorColor);
-  z-index: -1;
-  transform: translate(51%, 76%) rotateX(90deg);
-  background-image: url("./Whangaehu.svg");
-  position: absolute;
-}
-.ball {
-  height: 2rem;
-  border-radius: 100%;
-  width: 2rem;
-  background: var(--ballColor);
-  position: absolute;
-}
-.cube {
-  height: 80px;
-  width: 80px;
-  position: absolute;
-  left: calc(50% - 2rem);
-  top: calc(50% - 2rem);
-  transform-style: preserve-3d;
-  animation: spinning 5s linear 0s infinite;
-}
+
 @keyframes bouncing {
   0% {
   }
@@ -70,8 +46,6 @@ $box-color: #7585ff04;
   height: 100%;
   position: absolute;
   border: 1px solid rgb(223 154 189);
-  box-shadow: 0rem 0rem 0.5rem 0 #883f64 inset;
-  transition: background 300ms ease-in;
 }
 @keyframes appear {
   0% {
