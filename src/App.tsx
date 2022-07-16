@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
-import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import { EmailProvider } from "./contexts/EmailContext";
-import { ThemeProvider } from "styled-components";
 import { NewsProvider } from "./contexts/NewsContext";
+import { DynamicThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   useEffect(() => {
@@ -19,20 +18,7 @@ function App() {
       document.title = "Contact Me " + "|".repeat(dots);
     }, 1000);
   }, []);
-  const LightTheme = {
-    TextColor: "white",
-  };
-  const DarkTheme = {
-    TextColor: "black",
-  };
-  const [isDarkThemeActive, setIsDarkThemeActive] = React.useState(false);
-  const DynamicThemeProvider = ({ children }: { children: JSX.Element }) => {
-    if (isDarkThemeActive) {
-      return <ThemeProvider theme={DarkTheme}>{children}</ThemeProvider>;
-    } else {
-      return <ThemeProvider theme={LightTheme}>{children}</ThemeProvider>;
-    }
-  };
+
   return (
     <DynamicThemeProvider>
       <BrowserRouter>

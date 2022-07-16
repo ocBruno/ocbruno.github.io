@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { EmailProvider, useEmail } from "../../contexts/EmailContext";
+import React from "react";
+import { useEmail } from "../../contexts/EmailContext";
 import styled from "styled-components";
 
 interface IFixedEmailFormContainer {
@@ -14,8 +14,7 @@ const FixedEmailFormContainer = styled.div<IFixedEmailFormContainer>`
   border-radius: 12px;
   background: #3f4758;
   border: 2px solid white;
-  transform: ${(props) =>
-    props.isActive ? " translateX(0)" : " translateX(100vw)"};
+  transform: ${(props) => (props.isActive ? " translateX(0)" : " translateX(100vw)")};
   transition: 300ms ease-in;
 `;
 const FixedForm = styled.form`
@@ -34,7 +33,7 @@ const EmailLabel = styled.label<{ for: string }>`
 `;
 const EmailInput = styled.input`
   background-color: transparent;
-  color: ${(props) => props.theme.TextColor};
+  color: ${(props) => props.theme.colors.text};
   border: 1px solid white;
 `;
 const EmailMessageInput = styled(EmailInput)`
@@ -42,7 +41,7 @@ const EmailMessageInput = styled(EmailInput)`
 `;
 const EmailSubmitButton = styled.input`
   background-color: transparent;
-  color: ${(props) => props.theme.TextColor};
+  color: ${(props) => props.theme.colors.text};
   border: 1px solid white;
   color: white;
 `;
@@ -60,9 +59,7 @@ function FixedEmailForm() {
       payload: { subject: formState.subject, message: formState.message },
     });
     console.log(email, status);
-    window.open(
-      `mailto:brunocgmxus@gmail.com?subject=${email.subject}&body=${email.message}`
-    );
+    window.open(`mailto:brunocgmxus@gmail.com?subject=${email.subject}&body=${email.message}`);
   };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {

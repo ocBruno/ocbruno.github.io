@@ -12,12 +12,12 @@ type NewsReducerAction =
   | { type: "GET_NEWS_SUCCESS"; payload: any }
   | { type: "RESET_GET_NEWS" }
   | { type: "GET_NEWS_FAIL"; error: string }
-  | { type: "TOGGLE_FORM_ACTIVE" };
+  | { type: "TOGGLE_DROPDOWN" };
 
 interface NewsContextInterface {
   news: { data: { articles: NewsArticles } } | undefined;
   error: string | null;
-  isNewsActive: boolean;
+  isDropdownActive: boolean;
   status: Status;
 }
 
@@ -26,7 +26,7 @@ const initialState: NewsContextInterface = {
   status: null,
   news: undefined,
   error: null,
-  isNewsActive: false,
+  isDropdownActive: false,
 };
 
 export interface NewsArticle {
@@ -75,10 +75,10 @@ function newsReducer(state: NewsContextInterface, action: NewsReducerAction): Ne
         error: null,
       };
 
-    case "TOGGLE_FORM_ACTIVE":
+    case "TOGGLE_DROPDOWN":
       return {
         ...state,
-        isNewsActive: !state.isNewsActive,
+        isDropdownActive: !state.isDropdownActive,
       };
     default: {
       throw new Error(`Unhandled action: ${action}`);

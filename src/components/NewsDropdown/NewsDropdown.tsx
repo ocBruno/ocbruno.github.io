@@ -1,11 +1,12 @@
 import React from "react";
-import { NewsArticles, useNews } from "../../../../contexts/NewsContext";
+import { NewsArticles, useNews } from "../../contexts/NewsContext";
 import LoadingWidget from "../LoadingWidget/LoadingWidget";
 import {
   ArticlesListContainer,
   ArticlesListItem,
   ArticlesListItemAuthor,
   ArticlesListItemContent,
+  ArticlesListItemImage,
   ArticlesListItemTitle,
   DropdownContainer,
 } from "./NewsDropdown.styled";
@@ -17,28 +18,27 @@ const ArticlesList = ({ articles }: { articles: NewsArticles | undefined }) => {
         <LoadingWidget />
       ) : (
         articles.map((article) => (
-          <ArticlesListItem>
-            <ArticlesListContainer></ArticlesListContainer>
+          <ArticlesListContainer>
             <ArticlesListItem>
               <ArticlesListItemTitle>
                 {article.title}
-
+                <ArticlesListItemImage src={article.urlToImage} />
                 <ArticlesListItemAuthor>{article.author}</ArticlesListItemAuthor>
               </ArticlesListItemTitle>
               <ArticlesListItemContent>{article.content}</ArticlesListItemContent>
             </ArticlesListItem>
-          </ArticlesListItem>
+          </ArticlesListContainer>
         ))
       )}
     </ArticlesListContainer>
   );
 };
 function NewsDropdown() {
-  const [{ news }] = useNews();
+  const [{ news, isDropdownActive }] = useNews();
   const articles = news?.data.articles;
 
   return (
-    <DropdownContainer>
+    <DropdownContainer isActive={isDropdownActive}>
       <ArticlesList articles={articles} />
     </DropdownContainer>
   );
