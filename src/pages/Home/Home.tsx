@@ -13,7 +13,11 @@ import { HomePageBgContainer, HomePageContainer } from "./Home.styled";
 function Home() {
   const [{ isFormActive }, dispatch] = useEmail();
   const handleScroll = (e: Object) => {
-    if (Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight && !isFormActive) {
+    if (
+      Math.ceil(window.innerHeight + window.scrollY) >=
+        document.documentElement.scrollHeight &&
+      !isFormActive
+    ) {
       dispatch({ type: "TOGGLE_FORM_ACTIVE" });
     }
   };
