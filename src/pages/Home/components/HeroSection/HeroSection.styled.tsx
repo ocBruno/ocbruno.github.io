@@ -19,5 +19,8 @@ export const BackgroundContainer = styled.div`
   left: 0;
   top: 0; ;
 `;
+export const ScrollDownArrowSvg = styled.svg`
+  fill: ${({ theme }) => theme.colors.text};
+`;
 export const RecruiteeHeadline = styled.h1``;
 export const RecruiteeSubHeadline = styled.h2``;

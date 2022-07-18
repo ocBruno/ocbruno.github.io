@@ -59,17 +59,20 @@ table {
 html {
 	font-size: 1.125rem;
 }
+body {
+	margin: 0;
+	color: ${(props) => props.theme.colors.text};
+	padding: 0;
+	background: ${({ theme }) => theme.colors.background};
+}
 h1 {
 	font-size: 2rem;
 }
+
 h2 {
 	font-size: 1.5rem;
 }
-  body {
-    margin: 0;
-  color: ${(props) => props.theme.colors.text};
-    padding: 0;
-    background: ${({ theme }) => theme.colors.background};
-  }
-	
+button {
+	cursor: pointer;
+}
 `;
