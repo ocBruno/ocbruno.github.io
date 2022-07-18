@@ -60,9 +60,10 @@ html {
 	font-size: 1.125rem;
 }
 body {
-	margin: 0;
+	margin: 0 0.5rem;
 	color: ${(props) => props.theme.colors.text};
 	padding: 0;
+	overflow-x: hidden;
 	background: ${({ theme }) => theme.colors.background};
 }
 h1 {

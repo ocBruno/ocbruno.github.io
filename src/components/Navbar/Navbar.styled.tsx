@@ -5,8 +5,7 @@ export const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 36px;
-  margin-left: 12px;
+  height: 2.5rem;
   z-index: 5;
 `;
 export const NavbarLinks = styled.ul`

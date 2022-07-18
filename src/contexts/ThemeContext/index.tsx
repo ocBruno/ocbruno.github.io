@@ -7,9 +7,10 @@ export const themes = {
     colors: {
       primary: "lightblue",
       black: "black",
-      background: "white",
+      background: "#c9c6dd",
+      lightBackground: "#fff",
       text: "black",
-      border: "grey",
+      border: "#949494",
     },
   },
   dark: {
@@ -18,6 +19,7 @@ export const themes = {
       primary: "darkbue",
       black: "black",
       background: "#332e46",
+      lightBackground: "#3f3761",
       text: "#b3ad99",
       border: "grey",
     },
@@ -35,6 +37,7 @@ export interface ITheme {
     primary: string;
     black: string;
     background: string;
+    lightBackground: string;
     border: string;
     text: string;
   };
