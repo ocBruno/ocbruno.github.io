@@ -2,7 +2,13 @@ import React, { useEffect } from "react";
 import "./HeroSection.styled.tsx";
 import Hero3DBackground from "../Hero3DBackground/Hero3DBackground";
 import { scrollToClassName } from "../../../../utils/gsap";
-import { RecruiteeHeader } from "./HeroSection.styled";
+import {
+  BackgroundContainer,
+  HeroSectionContainer,
+  RecruiteeHeader,
+  RecruiteeHeadline,
+  RecruiteeSubHeadline,
+} from "./HeroSection.styled";
 
 function HeroSection() {
   useEffect(() => {
@@ -10,12 +16,12 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="OuterContent hero-section">
+    <HeroSectionContainer className="OuterContent hero-section">
       {/* box shadow animate on scroll trigger */}
       <RecruiteeHeader>
         <Hero3DBackground />
-        <h1 className="recruitee-name neomorph">Bruno Costa</h1>
-        <h2 className="recruitee-headline neomorph">Frontend Developer</h2>
+        <RecruiteeHeadline className="recruitee-name neomorph">Bruno Costa</RecruiteeHeadline>
+        <RecruiteeSubHeadline className="recruitee-headline neomorph">Frontend Developer</RecruiteeSubHeadline>
       </RecruiteeHeader>
       <button onClick={() => scrollToClassName(".summary-section")} className="next-section-arrow-button">
         <svg width="20px" height="20px" fill="rgb(200, 200, 200)" viewBox="0 0 122.88 120.64" xmlSpace="preserve">
@@ -24,7 +30,7 @@ function HeroSection() {
           </g>
         </svg>
       </button>
-      <div className="background-container">
+      <BackgroundContainer className="background-container">
         <svg width="1440" height="560" className="recruitee-background" viewBox="0 0 1440 560">
           <g clipPath='url("#SvgjsClipPath1175")' fill="none">
             <g>
@@ -132,8 +138,8 @@ function HeroSection() {
             </linearGradient>
           </defs>
         </svg>
-      </div>
-    </div>
+      </BackgroundContainer>
+    </HeroSectionContainer>
   );
 }
 

@@ -14,7 +14,7 @@ const FixedEmailFormContainer = styled.div<IFixedEmailFormContainer>`
   border-radius: 12px;
   background: #3f4758;
   border: 2px solid white;
-  transform: ${(props) => (props.isActive ? " translateX(0)" : " translateX(100vw)")};
+  transform: ${(props) => (props.isActive ? " translateX(0)" : " translateX(100%)")};
   transition: 300ms ease-in;
 `;
 const FixedForm = styled.form`

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Hero3DBackground.scss";
+import { Cube } from "./Hero3DBackground.styled";
 
 function Hero3DBackground() {
   useEffect(() => {
@@ -8,14 +9,14 @@ function Hero3DBackground() {
   return (
     <div className="scene-container">
       <div className="scene">
-        <div className="cube">
+        <Cube>
           <div className="front"></div>
           <div className="back"></div>
           <div className="top"></div>
           <div className="bottom"></div>
           <div className="right"></div>
           <div className="left"></div>
-        </div>
+        </Cube>
       </div>
     </div>
   );

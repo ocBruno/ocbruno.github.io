@@ -33,7 +33,7 @@ const ArticlesList = ({ articles }: { articles: NewsArticles | undefined }) => {
     </ArticlesListContainer>
   );
 };
-function NewsDropdown() {
+function NewsDropdown(): JSX.Element {
   const [{ news, isDropdownActive }] = useNews();
   const articles = news?.data.articles;
 

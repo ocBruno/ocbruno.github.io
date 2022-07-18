@@ -14,17 +14,10 @@ export const NavbarLinks = styled.ul`
   flex-direction: row;
   margin: 0;
   padding: 0;
-
-  li > * {
-    color: ${(props) => props.theme.colors.text};
-  }
-  button,
-  a {
-    margin: 0 6px;
-    color: $text-color;
-    text-decoration: none;
-    &:hover {
-      cursor: pointer;
-    }
-  }
+`;
+export const NavButtonLink = styled.li``;
+export const NavButton = styled.button`
+  margin: 0 6px;
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
 `;
