@@ -17,8 +17,8 @@ export const themes = {
     colors: {
       primary: "darkbue",
       black: "black",
-      background: "#332e46",
-      text: "#b3ad99",
+      background: "#312856",
+      text: "#ebebeb",
       border: "grey",
     },
   },

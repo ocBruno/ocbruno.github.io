@@ -11,14 +11,10 @@ export const RecruiteeHeader = styled.header`
   justify-content: center;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  margin: 12rem 0;
   color: ${({ theme }) => theme.colors.text};
   height: 100%;
 `;
-export const BackgroundContainer = styled.div`
-  left: 0;
-  top: 0; ;
-`;
+
 export const ScrollDownArrowSvg = styled.svg`
   fill: ${({ theme }) => theme.colors.text};
 `;

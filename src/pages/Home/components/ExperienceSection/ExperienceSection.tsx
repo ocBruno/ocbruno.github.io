@@ -11,7 +11,17 @@ function ExperienceSection() {
     <section className="experience-section">
       <h2 className="experience-header">Experience</h2>
       <article className="experience-item">
-        <h3 className="section-subheader">Leankeep - Facility Software</h3>
+        <h3 className="font-bold mb-2 text-lg">Job Space Creative</h3>
+        <i> Junior Frontend Developer </i>
+        <div>Aug 2022 - Fev 2023 (7 mos)</div>
+        <div>Curitiba, Paraná, Brazil</div>
+        <p>
+          Creating and maintaining online stores using vtex CMS/IO, and websites
+          using wordpress and react.
+        </p>
+      </article>
+      <article className="experience-item">
+        <h3 className="font-bold mb-2 text-lg">Leankeep - Facility Software</h3>
         <i> Junior Frontend Developer </i>
         <div>April 2021 - March 2022 (1 year)</div>
         <div>Curitiba, Paraná, Brazil</div>
@@ -23,7 +33,9 @@ function ExperienceSection() {
         </p>
       </article>
       <article className="experience-item">
-        <h3 className="section-subheader">Rhavi Carneiro's Fluency Academy </h3>
+        <h3 className="font-bold mb-2 text-lg">
+          Rhavi Carneiro's Fluency Academy{" "}
+        </h3>
         <i>Junior Frontend Web Developer</i>
         <div>Curitiba, Paraná, Brazil</div>
         <div>February 2020-November 2020 (10 months)</div>
@@ -35,7 +47,7 @@ function ExperienceSection() {
         </p>
       </article>
       <article className="experience-item">
-        <h3 className="section-subheader"> Dohms Web</h3>
+        <h3 className="font-bold mb-2 text-lg"> Dohms Web</h3>
         <i> Web Development Intern </i>
         <div>May 2019 - September 2019 (5 months)</div>
         <div>Curitiba, Paraná, Brazil</div>

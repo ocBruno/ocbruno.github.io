@@ -4,7 +4,7 @@ import Home from "./pages/Home/Home";
 import { EmailProvider } from "./contexts/EmailContext";
 import { NewsProvider } from "./contexts/NewsContext";
 import { DynamicThemeProvider } from "./contexts/ThemeContext";
-
+import "./index.css";
 function App() {
   useEffect(() => {
     let dots = 0;
